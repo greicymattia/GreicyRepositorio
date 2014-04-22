@@ -5,7 +5,7 @@
     <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1199a3b7-f48f-4a21-b670-f6b797232db2}</ProjectGuid>
+    <ProjectGuid>{1199A3B7-F48F-4A21-B670-F6B797232DB2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>exercicio1</RootNamespace>
@@ -47,5 +47,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-
 </Project>
