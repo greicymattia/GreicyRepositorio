@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AULA", "AULA\AULA.csproj", "{1EA0912B-6BB5-496D-97A0-5C56EA74747E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unidades", "E:\Visual Studio\SolutionExercicios\Unidade II\Unidades.csproj", "{D37479EB-7081-4728-A55F-E3DC164638D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unidades", "Unidades\Unidades.csproj", "{D37479EB-7081-4728-A55F-E3DC164638D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
