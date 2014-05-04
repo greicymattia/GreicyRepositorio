@@ -9,7 +9,7 @@ namespace Unidades
     class UnidadeVII_Operadores
     {
         //OPERADORES
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             Console.WriteLine(1 + 1); //adição;
             Console.WriteLine(1 - 1); //subtração;

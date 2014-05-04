@@ -214,5 +214,56 @@ namespace Unidades
             Console.WriteLine("Moças inscritas: {0}\nMoça mais alta...\t Nome: {1}.\t\tAltura: {2:F2}.",cont,nomeMaior,alturaMaior);
             Console.ReadKey();
         }
+        static void Main7(string[] args)
+        {
+            Console.WriteLine("Escolha uma opção... \n('H' para horistas ou 'M' para mensalistas): ");
+            string opcao1 = Console.ReadLine();
+            double salarioBruto = 0;
+            opcao1 = opcao1.ToUpper();
+            if (opcao1 == "H")
+            {
+                Console.Write("Digite seu salario por hora: R$ ");
+                double salarioHora = double.Parse(Console.ReadLine());
+                Console.Write("Digite a quantidade de horas trabalhadas: ");
+                double horas = double.Parse(Console.ReadLine());
+                salarioBruto = horas * salarioHora;
+            }
+            else
+            {
+                Console.Write("Digite seu salário por mês: R$ ");
+                double salarioMes = double.Parse(Console.ReadLine());
+                Console.Write("Digite a quantidade de dias faltados no mês: ");
+                int faltas = int.Parse(Console.ReadLine());
+                salarioBruto = salarioMes - ((salarioMes/30) * faltas);
+            }
+            Console.WriteLine("Salario Bruto: R$ {0:F2}", salarioBruto);
+            Console.ReadKey();
+        }
+        static void Main8(string[] args)
+        {
+            Console.Write("Digite a quantidade de autores: ");
+            int quantidade = int.Parse(Console.ReadLine());
+          //  string[] separador = new string[quantidade];
+            string[] nomes = new string[quantidade];
+            int i = 0;
+            string X = ", ";
+            for (i = 0; i < quantidade; i++)
+            {
+                Console.Write("Digite o primeiro e o ultimo nome do autor {0}: ", i + 1);
+                nomes[i] = Console.ReadLine();
+                string[] separador = nomes[i].Split(' ');
+                separador[1] = separador[1].ToUpper();
+                nomes[i] = separador[1] + X + separador[0];
+            }
+            for (i = 0; i < quantidade; i++)
+            {
+                Console.WriteLine(nomes[i]);
+            }
+            Console.ReadKey();
+        }
+        static void Main9(string[] args)
+        {
+
+        }
     }
 }
