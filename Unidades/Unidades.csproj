@@ -49,6 +49,7 @@
     <Compile Include="UnidadeII.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Complementar_UnidadeIeII.cs" />
+    <Compile Include="UnidadeVII_Operadores.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

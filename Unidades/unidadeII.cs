@@ -200,7 +200,7 @@ namespace Unidades
             Console.ReadKey();
 
         }
-        static void MainDesafio(string[] args)
+        static void Main16(string[] args)
         {
             Console.Write("Digite um numero inteiro e positivo para A: ");
             double A = double.Parse(Console.ReadLine());
