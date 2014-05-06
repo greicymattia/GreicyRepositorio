@@ -271,10 +271,10 @@ namespace Unidades
             }
             Console.ReadKey();
         }
-        
+
         //static void Main10(string[] args)
         //{
-        //    int i =0;
+        //    int i = 0;
         //    for (i = 0; i < 5; i++)
         //    {
         //        Console.Write("Digite um par de numeros: ");
@@ -283,7 +283,7 @@ namespace Unidades
         //        int divisor = divisoresA();
         //        if (divisor == B)
         //        {
-        //            Console.WriteLine("{0} e {1} são numeros amigos!",A,B);
+        //            Console.WriteLine("{0} e {1} são numeros amigos!", A, B);
         //        }
         //        else
         //        {
@@ -293,19 +293,19 @@ namespace Unidades
         //                Console.WriteLine("{0} e {1} são numeros amigos!", A, B);
         //            }
         //        }
-        //        Console.Clear();
         //        Console.ReadKey();
+        //        Console.Clear();
         //    }
         //}
         //static int divisoresA()
         //{
         //    int i = 0;
         //    int soma = 0;
-        //    for(i=1; i<A; i++)
+        //    for (i = 1; i < A; i++)
         //    {
         //        if (A % i == 0 && A != i)
         //        {
-        //        soma = soma + i;
+        //            soma = soma + i;
         //        }
         //    }
         //    return soma;
@@ -314,7 +314,7 @@ namespace Unidades
         //{
         //    int i = 0;
         //    int soma = 0;
-        //    for (i = 1; i< B; i++)
+        //    for (i = 1; i < B; i++)
         //    {
         //        if (B % i == 0 && B != i)
         //        {
