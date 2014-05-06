@@ -91,10 +91,18 @@ namespace Unidades
         //}
         static void Main3(string[] args)
         {
+            char sexo = ' ';
             Console.Write("Digite a sua altura: ");
             double altura = double.Parse(Console.ReadLine());
-            Console.Write("Sexo (1 - Feminino/ 2 - Masculino): ");
-            char sexo = char.Parse(Console.ReadLine());
+            do
+            {
+                Console.Write("Sexo (1 - Feminino/ 2 - Masculino): ");
+                sexo = char.Parse(Console.ReadLine());
+                if (sexo != 1 && sexo != 2)
+                {
+                    Console.WriteLine("Digite novamente...");
+                }
+            }while(sexo != '1' && sexo != '2');
             double pesoIdeal = 0;
             if (sexo == '1')
             {
@@ -104,7 +112,7 @@ namespace Unidades
             {
                 pesoIdeal = (72.7 * altura) - 58;
             }
-            Console.WriteLine("Seu peso ideal é: {0:F2}", pesoIdeal);
+            Console.WriteLine("Seu peso ideal é: {0:F2}Kg", pesoIdeal);
             Console.ReadKey();
         }
         static void Main4(string[] args)
