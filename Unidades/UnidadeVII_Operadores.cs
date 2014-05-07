@@ -64,5 +64,26 @@ namespace Unidades
             j = (i == 7 ^ i <= 10);   // XOR
 
         }
+        //OPERADOR TERNARIO
+        static void Main(string[] args)
+        {
+            double nota = 0.8;
+            string resultado = nota >= 0.5 ? "aprovado" : "reprovado";
+            Console.WriteLine(nota >= 0.5 ? "aprovado" : "reprovado");
+            
+            //NEGAÇÃO
+            if (!(nota == 0.8))
+            {
+                Console.WriteLine(!(nota == -8));
+            }
+            int i = 10;
+
+            // INCREMENTO E DECREMENTO (PÓS E PRÉ)
+            int j = ++i + i--;
+
+            Console.WriteLine(j);
+            Console.WriteLine(i);
+            Console.ReadKey();
+        }
     }
 }
