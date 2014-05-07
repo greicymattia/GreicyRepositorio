@@ -44,7 +44,7 @@ namespace Unidades
         }
         
         //OPERADORES RELACIONAIS
-        static void Main(string[] args)
+        static void Main3(string[] args)
         {
             int i = 7;
             bool j = false;
@@ -56,12 +56,12 @@ namespace Unidades
         }
 
         //OPERADORES LOGICOS
-        static void Main(string[] args){
+        static void Main4(string[] args){
             int i = 7;
             bool j = false;
             j = (i == 6 && i != 7); // E
             j = (i <= 10 || i >= 5); // OU
-            j(i == 7 ^ i <= 10);   // XOR
+            j = (i == 7 ^ i <= 10);   // XOR
 
         }
     }
