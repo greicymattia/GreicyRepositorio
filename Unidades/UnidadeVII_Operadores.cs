@@ -26,6 +26,42 @@ namespace Unidades
             string D = "!";
             Console.WriteLine(A + C + B + D); //Concatenação de Strings;
             Console.ReadKey();
+        }
+
+        //OPERADORES DE ATRIBUIÇÃO;
+        static void Main2(string[] args)
+        {
+            int i = 0;
+            i++;        //i=i+1;  executa dps     (pós)
+            i--;        //i=i-1;  executa dps     (pós)  
+            --i;        //i=i-1;  executa antes   (pré)
+            ++i;        //i=i+1;  executa antes   (pré)
+            i += 3;     // i=i+3;
+            i -= 2;     //i=i-2;
+            i *= 5;     //i=i*5;
+            i /= 1;     // i=i/1;
+            i %= 2;     //i=i%2;
+        }
+        
+        //OPERADORES RELACIONAIS
+        static void Main(string[] args)
+        {
+            int i = 7;
+            bool j = false;
+            j = (i == 7);
+            j = (i != 7);
+            j = (i >= 5);
+            j = (i <= 3);
+
+        }
+
+        //OPERADORES LOGICOS
+        static void Main(string[] args){
+            int i = 7;
+            bool j = false;
+            j = (i == 6 && i != 7); // E
+            j = (i <= 10 || i >= 5); // OU
+            j(i == 7 ^ i <= 10);   // XOR
 
         }
     }
