@@ -65,7 +65,7 @@ namespace Unidades
 
         }
         //OPERADOR TERNARIO
-        static void Main(string[] args)
+        static void Main5(string[] args)
         {
             double nota = 0.8;
             string resultado = nota >= 0.5 ? "aprovado" : "reprovado";
