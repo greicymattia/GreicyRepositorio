@@ -76,6 +76,19 @@ namespace Unidades
         {
             Console.WriteLine("Digite a quantidade total de mercadorias: ");
             int total = int.Parse(Console.ReadLine());
+            int i = 0;
+            double preco = 0;
+            double media = 0;
+            for (i = 0; i < total; i++)
+            {
+                Console.Write("Digite o valor da mercadoria {0}: ", i + 1);
+                preco = double.Parse(Console.ReadLine());
+                media += preco;               
+            }            
+            Console.WriteLine("Média de valores das mercadorias: {0:F2}",media/total);
+            Console.WriteLine("Valor total em estoque: {0:F2}",media);
+            Console.WriteLine("Quantidade {0}: ", total);
+            Console.ReadKey();
 
         }
     }
