@@ -90,7 +90,7 @@ namespace Unidades
             Console.WriteLine("Quantidade {0}: ", total);
             Console.ReadKey();
         }
-        static void Main(string[] args)
+        static void Main5(string[] args)
         {
             int numero = 0;
             do
