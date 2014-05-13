@@ -89,7 +89,6 @@ namespace Unidades
             Console.WriteLine("Valor total em estoque: {0:F2}",media);
             Console.WriteLine("Quantidade {0}: ", total);
             Console.ReadKey();
-
-        }
+        }     
     }
 }
