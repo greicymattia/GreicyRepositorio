@@ -89,6 +89,69 @@ namespace Unidades
             Console.WriteLine("Valor total em estoque: {0:F2}",media);
             Console.WriteLine("Quantidade {0}: ", total);
             Console.ReadKey();
-        }     
+        }
+        static void Main(string[] args)
+        {
+            int numero = 0;
+            do
+            {
+            Console.WriteLine("Digite um numero ímpar: ");
+                numero = int.Parse(Console.ReadLine());             
+            }while(numero % 3 != 0 && numero != 1 && numero !=0);
+            Console.Clear();
+            int i = 0;
+            int j = 0;            
+            int z = 0;
+            for (j = numero; j > 0; j--)
+            {
+                for (i = z; i < numero; i++)
+                {                    
+                    Console.Write(i + 1 + " ");       
+                }
+                Console.WriteLine();
+                z = z + 1;
+                numero = numero - 1;                             
+            }
+            Console.ReadKey();
+        }
+        static void Main6(string[] args)
+        {
+            int i = 0;
+            Random numeroSorteado = new Random();
+            int[] dado = new int[6];
+            for (i = 0; i < 100; i++)
+            {                
+                int numero = numeroSorteado.Next(1,7);
+                if (numero == 1)
+                {
+                    dado[0] += 1;
+                }
+                else if (numero == 2)
+                {
+                    dado[1] += 1;
+                }
+                else if (numero == 3)
+                {
+                    dado[2] += 1;
+                }
+                else if (numero == 4)
+                {
+                    dado[3] += 1;
+                }
+                else if (numero == 5)
+                {
+                    dado[4] += 1;
+                }
+                else
+                {
+                    dado[5] += 1;
+                }
+            }
+            for (i = 0; i < 6; i++)
+            {
+                Console.WriteLine("{0} vezes no lado {1}", dado[i],i+1);                
+            }
+            Console.ReadKey();
+        }
     }
 }
