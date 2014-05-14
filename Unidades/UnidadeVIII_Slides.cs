@@ -91,8 +91,15 @@ namespace Unidades
             }
             Console.ReadKey();
         }
-        static void Main(string[] args)
+        static void Main8(string[] args)
         {
+            //GERADOR DE INGRESSOS
+            Random gerador = new Random();        
+            int lugar = gerador.Next(1, 21);
+            int setor = gerador.Next(1, 5);
+            Console.WriteLine("Setor: {0}; \tCadeira: {1}.",setor, lugar);
+            Console.ReadKey();
+
 
         }
     }
