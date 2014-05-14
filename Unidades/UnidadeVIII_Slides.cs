@@ -158,13 +158,13 @@ namespace Unidades
             }
             Console.ReadKey();
         }
-        static void Main(string[] args)
+        static void Main12(string[] args)
         {
 
             //CTRL + C = interrompe o programa! (stop)
             for (; ; )
             {
-                Console.WriteLine("Eu não andarei de skate nos corredores!");
+                Console.WriteLine("Eu não andarei de skate nos corredores!");                
             }            
         }
 
