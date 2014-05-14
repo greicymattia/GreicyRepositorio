@@ -91,6 +91,7 @@ namespace Unidades
             }
             Console.ReadKey();
         }
+        
         static void Main8(string[] args)
         {
             //GERADOR DE INGRESSOS
@@ -99,8 +100,73 @@ namespace Unidades
             int setor = gerador.Next(1, 5);
             Console.WriteLine("Setor: {0}; \tCadeira: {1}.",setor, lugar);
             Console.ReadKey();
-
+        }
+        static void Main9(string[] args)
+        {
+            //JOGO DE DADO
+            int i = 0;
+            Random gerador = new Random();            
+            int soma = 0;
+            for (i = 1; i < 6; i++)
+            {
+                int dado = gerador.Next(1,7);
+                soma += dado;
+                if (soma > 19)
+                {
+                    Console.WriteLine("Soma: {0} \nVocê ganhou!",soma);
+                    Console.ReadKey();
+                    break;
+                }
+            }
+            if (soma<=19) {
+                Console.WriteLine("Soma: {0} \nVocê perdeu!", soma);
+                Console.ReadKey();
+            }
+        }
+        static void Main10(string[] args)
+        {
+            int i = 0;
+            for (i = 1000; i < 2000; i++)
+            {
+                Console.Write("Bilhete: {0}", i);                
+            }
+            Console.ReadKey();
 
         }
+        static void Main11(string[] args)
+        {
+            //JOGO DE DADO 2
+            int i = 0;
+            int soma = 0;
+            Random gerador = new Random();
+
+            for (i = 1; i < 5; i++)
+            {
+                int dado = gerador.Next(1,7);
+                if (dado == 1 || dado == 3 || dado == 5)
+                {
+                    soma += dado;
+                }           
+            }
+            if (soma > 9)
+            {
+                Console.WriteLine("Você ganhou, soma: {0}",soma);
+            }
+            else
+            {
+                Console.WriteLine("Você perdeu, soma: {0}", soma);
+            }
+            Console.ReadKey();
+        }
+        static void Main(string[] args)
+        {
+
+            //CTRL + C = interrompe o programa! (stop)
+            for (; ; )
+            {
+                Console.WriteLine("Eu não andarei de skate nos corredores!");
+            }            
+        }
+
     }
 }
