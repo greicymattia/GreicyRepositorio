@@ -8,7 +8,7 @@ namespace AULA
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             int valor = 19;   /// LONG RECEBE INTEIRO!!
             long valor2 = valor;
@@ -20,8 +20,11 @@ namespace AULA
             Console.ReadKey();
             //CASTING...
 
+
+            
+
         }
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {
             //quantidade de caracter que tem na string (contando os espaços);
             string s = "Nome da Pessoa";
@@ -53,6 +56,21 @@ namespace AULA
             string s4 = s1.Substring(1, 1); // "T";
 
         
+        }
+        static void Main3(string[] args)
+        {
+            int[] numeros = new int[30];
+            int i = 0;
+            //Length diz qual o tamanho do vetor
+            for(i=0; i<numeros.Length; i++){
+              numeros[i] = i*3;
+            }
+            //foreach (var item in collection){
+            //}
+            foreach (var item in numeros){
+             Console.WriteLine(item);
+            }
+            Console.ReadKey();
         }
     }
 }
