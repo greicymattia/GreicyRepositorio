@@ -8,7 +8,7 @@ namespace Medindo_a_Febre
 {
     class Medindo_a_Febre_UnidadeVIII
     {
-        static void Main(string[] args)
+        static void Main12(string[] args)
         {
 
             //exercicio 12

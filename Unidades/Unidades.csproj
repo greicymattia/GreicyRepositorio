@@ -43,8 +43,10 @@
   <ItemGroup>
     <Compile Include="Complementar_UnidadeIII.cs" />
     <Compile Include="Complementar_UnidadeVI.cs" />
+    <Compile Include="Complemetar_UnidadeIX.cs" />
     <Compile Include="UnidadeIII.cs" />
     <Compile Include="UnidadeIV.cs" />
+    <Compile Include="UnidadeIX.cs" />
     <Compile Include="UnidadeVI.cs" />
     <Compile Include="UnidadeII.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

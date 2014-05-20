@@ -133,14 +133,18 @@ namespace Unidades
         }
         static void Main6(string[] args)
         {
+            int cont = 0;
             Random gerador = new Random();
             int numero = gerador.Next(0,99999999);
+            Console.WriteLine(numero);
             string num = numero.ToString();
-            bool resultado = num.Contains("1");
-            if (resultado == true)
-            {
-                Console.WriteLine();
+            for(int i = 0; i <num.Length; i++){
+                if(num[i] == '1'){
+                    cont +=1;
+                }                                      
             }
+            Console.WriteLine("Quantidade de numeros 1: {0}", cont); 
+            Console.ReadKey();
         }
     }
 }
