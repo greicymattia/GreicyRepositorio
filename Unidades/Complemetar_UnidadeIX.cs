@@ -193,7 +193,9 @@ namespace Unidades
         }
         static void Main8(string[] args)
         {
-            int num = 6;            
+            int num = 2;
+            int cont = 0;
+            int cont2 = 0;
             int[,] gabarito = new int[13,3];
             int[,] resposta = new int[13, 3];
             int[] acertos = new int[num];
@@ -201,40 +203,69 @@ namespace Unidades
             Random gerador = new Random();
             Console.WriteLine("Digite o gabarito (0 p/ vazio ou 1 p/ preenchido): ");
             for (int i = 0; i < 13; i++)
-            {
-                Console.Write("Linha: {0}  ", i);
+            {               
                 for (int j = 0; j < 3; j++)
                 {
-                    Console.WriteLine("Coluna: {0}", j);
+                    Console.Write("Linha: {0}  ", i + 1);
+                    Console.WriteLine("Coluna: {0}", j+1);
                     gabarito[i, j] = int.Parse(Console.ReadLine());
+                    if (gabarito[i, j] == 1)
+                    {
+                        cont += 1;
+                    }
+                    if (cont == 13)
+                    {
+                        break;
+                    }
+                }
+                if (cont == 13)
+                {
+                    break;
                 }
             }
             Console.Clear();
             for (int i = 0; i < num; i++)
-            {
-                
+            {                
                 Console.WriteLine("Digite o numero do cartão do apostador {0}: ", i + 1);
                 cartao[i] = int.Parse(Console.ReadLine());
+                cont2 = 0;
                 Console.Clear();
                 for (int j = 0; j < 13; j++)
-                {
-                    Console.Write("\nLinha {0}",j+1);
+                {                    
                     for (int y = 0; y < 3; y++)
                     {
+                        Console.Write("\nLinha {0}", j + 1);
                         Console.WriteLine("  Coluna {0}",y+1);
                         resposta[i, j] = int.Parse(Console.ReadLine());
-                        if (resposta[i, j] == gabarito[i, j])
-                        {
-                            acertos[i] += 1;
-                        }
 
+                        if (resposta[i, j] == 1 && cont2 != 0)
+                        {
+                            cont2 += 1;
+                            if (resposta[i, j] == gabarito[i, j])
+                            {
+                                acertos[i] += 1;
+                            }
+                        }
+                        else if (cont2 == 13)
+                        {
+                            break;
+                        }
+                    }
+                    if (cont2 == 13)
+                    {
+                        break;
                     }
                 }
                 Console.Clear();
             }
             for (int i = 0; i < num; i++)
             {
-                Console.WriteLine("");
+                Console.WriteLine("\n\nNumero do cartão do apostador: {0}", cartao[i]);
+                Console.WriteLine("Numero de acertos: {0}",acertos[i]);
+                if (acertos[i] == 13)
+                {
+                    Console.WriteLine("Ganhador");
+                }
             }
         }
     }

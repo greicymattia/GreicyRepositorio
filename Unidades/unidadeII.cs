@@ -216,8 +216,5 @@ namespace Unidades
             Console.WriteLine("O resultado da expressão D = ((A+B)²)+(B+C)²)/2  é: " + D);
             Console.ReadKey();
         }
-
-
-
     }
 }
