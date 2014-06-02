@@ -19,7 +19,7 @@ namespace Unidades
         public static double imc = 0;
         public static double peso = 0;
         public static double altura = 0;
-        public static int vetor = new int[10];
+        public static int[] vetor = new int[10];
         static double ConsumodeCombustivel(double x, double y)
         {            
             return y/x;
@@ -82,14 +82,14 @@ namespace Unidades
                 Console.WriteLine(vetor[i]);
             }
         }
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {            
             Console.Write("Digite quantos km você andou: ");
             double dist = double.Parse(Console.ReadLine());
             Console.Write("Digite a quantidade de combustivel gastro (em litros): ");
             double litros = double.Parse(Console.ReadLine());
             double resp = ConsumodeCombustivel(litros,dist);
-            Console.WriteLine("O consumo de combustivel é: {0:F2}",resp);
+            Console.WriteLine("O consumo de combustivel é: {0:F2} l/km",resp);
             Console.ReadKey();
             Console.Clear();
             Console.Write("Digite o valor do capital: ");
@@ -111,7 +111,7 @@ namespace Unidades
             Console.Write("Digite o valor de desconto por numero de filhos: ");
             desc = double.Parse(Console.ReadLine());
             IRPF();
-            Console.WriteLine("Imposto de Renda: {0:F2}", IR);
+            Console.WriteLine("Imposto de Renda: R$ {0:F2}", IR);
             Console.ReadKey();
             Console.Clear();
             Console.Write("Digite seu peso em kg: ");
