@@ -52,7 +52,7 @@ namespace Medindo_a_Febre
             Console.WriteLine("{0} pessoas entraram no horario de expediente (entre as 10:00 e 16:00).",valido);
             Console.ReadKey();
         }
-        static void Main9(string[] args)
+        static void Main(string[] args)
         {
             double desconto = 0;
             Console.Write("Digite o nome do produto: ");

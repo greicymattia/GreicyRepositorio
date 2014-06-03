@@ -57,7 +57,7 @@ namespace AULA
 
         
         }
-        static void Main3(string[] args)
+        static void Main(string[] args)
         {
             int[] numeros = new int[30];
             int i = 0;

@@ -66,29 +66,29 @@ namespace Unidades
                 Console.ReadKey();
             }
         }
-        //static void Cadastro()
-        //{
-        //    Console.Write("Digite o nome de usuario: ");
-        //    Usuario = Console.ReadLine();
-        //    Console.Write("Digite o dia atual: ");
-        //    DiaAtual = int.Parse(Console.ReadLine());
-        //    Console.Write("Digite o mes atual: ");
-        //    MesAtual = int.Parse(Console.ReadLine());
-        //    Console.Write("Digite o ano atual: ");
-        //    AnoAtual = int.Parse(Console.ReadLine());
-        //    PrimeiraData.AddDays(DiaAtual);
-        //    PrimeiraData.AddYears(AnoAtual);
-        //    PrimeiraData.AddMonths(MesAtual);
-        //    Console.Clear();
-        //    senha = "NomeUsuário123";
-        //    Console.WriteLine("Primeira senha gerada automaticamente. \nSua senha é: {0}", senha);
-        //    Cont = Cont + 1;
-        //}
-        //static void Alterar()
-        //{
-        //    Console.Write("\n\n{0}...\nSua senha expirou!\n\nPor favor digite a nova senha: ",Usuario);
-        //    senha = Console.ReadLine();
-        //}
+        static void Cadastro()
+        {
+            Console.Write("Digite o nome de usuario: ");
+            Usuario = Console.ReadLine();
+            Console.Write("Digite o dia atual: ");
+            DiaAtual = int.Parse(Console.ReadLine());
+            Console.Write("Digite o mes atual: ");
+            MesAtual = int.Parse(Console.ReadLine());
+            Console.Write("Digite o ano atual: ");
+            AnoAtual = int.Parse(Console.ReadLine());
+            PrimeiraData.AddDays(DiaAtual);
+            PrimeiraData.AddYears(AnoAtual);
+            PrimeiraData.AddMonths(MesAtual);
+            Console.Clear();
+            senha = "NomeUsuário123";
+            Console.WriteLine("Primeira senha gerada automaticamente. \nSua senha é: {0}", senha);
+            Cont = Cont + 1;
+        }
+        static void Alterar()
+        {
+            Console.Write("\n\n{0}...\nSua senha expirou!\n\nPor favor digite a nova senha: ", Usuario);
+            senha = Console.ReadLine();
+        }
         static void Main3(string[] args)
         {
             char sexo = ' ';
@@ -272,56 +272,56 @@ namespace Unidades
             Console.ReadKey();
         }
 
-        //static void Main10(string[] args)
-        //{
-        //    int i = 0;
-        //    for (i = 0; i < 5; i++)
-        //    {
-        //        Console.Write("Digite um par de numeros: ");
-        //        A = int.Parse(Console.ReadLine());
-        //        B = int.Parse(Console.ReadLine());
-        //        int divisor = divisoresA();
-        //        if (divisor == B)
-        //        {
-        //            Console.WriteLine("{0} e {1} são numeros amigos!", A, B);
-        //        }
-        //        else
-        //        {
-        //            divisor = divisoresB();
-        //            if (divisor == A)
-        //            {
-        //                Console.WriteLine("{0} e {1} são numeros amigos!", A, B);
-        //            }
-        //        }
-        //        Console.ReadKey();
-        //        Console.Clear();
-        //    }
-        //}
-        //static int divisoresA()
-        //{
-        //    int i = 0;
-        //    int soma = 0;
-        //    for (i = 1; i < A; i++)
-        //    {
-        //        if (A % i == 0 && A != i)
-        //        {
-        //            soma = soma + i;
-        //        }
-        //    }
-        //    return soma;
-        //}
-        //static int divisoresB()
-        //{
-        //    int i = 0;
-        //    int soma = 0;
-        //    for (i = 1; i < B; i++)
-        //    {
-        //        if (B % i == 0 && B != i)
-        //        {
-        //            soma = soma + i;
-        //        }
-        //    }
-        //    return soma;
-        //}
+        static void Main10(string[] args)
+        {
+            int i = 0;
+            for (i = 0; i < 5; i++)
+            {
+                Console.Write("Digite um par de numeros: ");
+                A = int.Parse(Console.ReadLine());
+                B = int.Parse(Console.ReadLine());
+                int divisor = divisoresA();
+                if (divisor == B)
+                {
+                    Console.WriteLine("{0} e {1} são numeros amigos!", A, B);
+                }
+                else
+                {
+                    divisor = divisoresB();
+                    if (divisor == A)
+                    {
+                        Console.WriteLine("{0} e {1} são numeros amigos!", A, B);
+                    }
+                }
+                Console.ReadKey();
+                Console.Clear();
+            }
+        }
+        static int divisoresA()
+        {
+            int i = 0;
+            int soma = 0;
+            for (i = 1; i < A; i++)
+            {
+                if (A % i == 0 && A != i)
+                {
+                    soma = soma + i;
+                }
+            }
+            return soma;
+        }
+        static int divisoresB()
+        {
+            int i = 0;
+            int soma = 0;
+            for (i = 1; i < B; i++)
+            {
+                if (B % i == 0 && B != i)
+                {
+                    soma = soma + i;
+                }
+            }
+            return soma;
+        }
     }
 }
