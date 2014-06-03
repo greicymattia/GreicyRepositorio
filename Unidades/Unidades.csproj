@@ -57,6 +57,7 @@
     <Compile Include="UnidadeVIII_Slides.cs" />
     <Compile Include="UnidadeVII_Operadores.cs" />
     <Compile Include="UnidadeX.cs" />
+    <Compile Include="UnidadeXI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
