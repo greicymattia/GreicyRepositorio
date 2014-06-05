@@ -28,7 +28,7 @@ namespace Medindo_a_Febre
             Random gerador = new Random();
             for (int i = 0; i < 50; i++)
             {
-                idade[i] = gerador.Next(0, 91);
+                idade[i] = gerador.Next(15, 91);
                 maioridade[i] = (idade[i] >= 21) ? true : false;
                 altura[i] = gerador.NextDouble();
                 altura[i] += 1;
@@ -95,41 +95,41 @@ namespace Medindo_a_Febre
         static void velhos()
         {
             int[] poscicao = new int[10];
-            for (int i = 0; i < 50; i++)
+            for (int i = 0; i < 49; i++)
             {
-                for (int i = 1; j < 50; j++)
+                for (int j = i+1; j < 50; j++)
                 {
-                    if (idade[j] < idade[i])
+                    if (idade[i]< idade[j])
                     {
-                        int aux = idade[j];
-                        idade[j] = idade[i];
-                        idade[i] = aux;
+                        int aux = idade[i];
+                        idade[i] = idade[j];
+                        idade[j] = aux;
 
-                        string aux1 = nome[j];
-                        nome[j] = nome[i];
-                        nome[i] = aux1;
+                        string aux1 = nome[i];
+                        nome[i] = nome[j];
+                        nome[j] = aux1;
 
-                        double aux2 = altura[j];
-                        altura[j] = altura[i];
-                        altura[i] = aux2;
+                        double aux2 = altura[i];
+                        altura[i] = altura[j];
+                        altura[j] = aux2;
 
-                        char aux3 = sexo[j];
-                        sexo[j] = sexo[i];
-                        sexo[i] = aux3;
+                        char aux3 = sexo[i];
+                        sexo[i] = sexo[j];
+                        sexo[j] = aux3;
 
-                        bool aux4 = maioridade[j];
-                        maioridade[j] = maioridade[i];
-                        maioridade[i] = aux4;
+                        bool aux4 = maioridade[i];
+                        maioridade[i] = maioridade[j];
+                        maioridade[j] = aux4;
                     }
                 }
             }
             Console.WriteLine("\n\nOs 10 mais velhos são: ");
-            for (int i = 9; i >=0; i--)
+            for (int i = 0; i < 10; i++)
             {
                 Console.WriteLine("Nome: {0}, Idade: {1}, Sexo: '{2}', Adulto: {3}, Altura: {4:F2}", nome[i], idade[i], sexo[i], maioridade[i],altura[i]);
             }
             Console.WriteLine("\n\nOs 5 mais novos são: ");
-            for (int i = 0; i < 5; i++)
+            for (int i = 49; i >=45; i--)
             {
                 Console.WriteLine("Nome: {0}, Idade: {1}, Sexo: '{2}', Adulto: {3}, Altura: {4:F2}", nome[i], idade[i], sexo[i], maioridade[i],altura[i]);
             }
