@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Unidades
 {
-    class Complemetar_UnidadeIX
+    class Complementar_UnidadeIX
     {
         static void Main1(string[] args)
         {

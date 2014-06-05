@@ -44,7 +44,8 @@
     <Compile Include="Complementar_UnidadeIII.cs" />
     <Compile Include="Complementar_UnidadeVI.cs" />
     <Compile Include="Complementar_UnidadeX.cs" />
-    <Compile Include="Complemetar_UnidadeIX.cs" />
+    <Compile Include="Complementar_UnidadeXI.cs" />
+    <Compile Include="Complementar_UnidadeIX.cs" />
     <Compile Include="UnidadeIII.cs" />
     <Compile Include="UnidadeIV.cs" />
     <Compile Include="UnidadeIX.cs" />
