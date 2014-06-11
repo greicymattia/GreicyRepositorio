@@ -79,23 +79,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BandoDeDados\Chave estrangeira.sql" />
-    <Content Include="BandoDeDados\Comando para zerar o Id entre outros.sql" />
-    <Content Include="BandoDeDados\dbo.Aluno.data.sql" />
-    <Content Include="BandoDeDados\Exercicio_3.sql" />
-    <Content Include="BandoDeDados\Exercicio_4.sql" />
-    <Content Include="BandoDeDados\Exercicio_5.sql" />
-    <Content Include="BandoDeDados\Exercicio_6.sql" />
-    <Content Include="BandoDeDados\GreicyDB.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="BandoDeDados\GreicyDB_log.ldf">
-      <DependentUpon>GreicyDB.mdf</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="BandoDeDados\Inserir item na mao.sql" />
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>

@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AULA", "AULA\AULA.csproj", "{1EA0912B-6BB5-496D-97A0-5C56EA74747E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unidades", "Unidades\Unidades.csproj", "{D37479EB-7081-4728-A55F-E3DC164638D4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medindo_a_Febre", "Medindo_a_Febre\Medindo_a_Febre.csproj", "{E9355EE8-C903-4BD7-A1C4-4BBDAEE9694A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BancoDeDados", "BancoDeDados\BancoDeDados.csproj", "{82E9D80E-12F5-411F-83DA-D078CBB6116B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{E9355EE8-C903-4BD7-A1C4-4BBDAEE9694A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9355EE8-C903-4BD7-A1C4-4BBDAEE9694A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9355EE8-C903-4BD7-A1C4-4BBDAEE9694A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82E9D80E-12F5-411F-83DA-D078CBB6116B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82E9D80E-12F5-411F-83DA-D078CBB6116B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82E9D80E-12F5-411F-83DA-D078CBB6116B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82E9D80E-12F5-411F-83DA-D078CBB6116B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
