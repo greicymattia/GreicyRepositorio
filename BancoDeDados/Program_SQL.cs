@@ -40,10 +40,10 @@ namespace BancoDeDados
                         MenuConsulta();
                         break;
                     case "3":
-                        MenuAlteracao();
+                        //MenuAlteracao();
                         break;
                     case "4":
-                        MenuRemocao();
+                        //MenuRemocao();
                         break;                                        
                     case "5":
                         Console.WriteLine("\nO programa está sendo encerrado. Aperte qualquer tecla para continuar!");
@@ -81,9 +81,8 @@ namespace BancoDeDados
                         //Chamar metodo cadastro cliente
                         CadastroProduto();
                         break;
-                    case "3":
-                        Console.WriteLine("Sistema FORA DO AR!!");
-                        //CadastroPedido();
+                    case "3":                        
+                        CadastroPedido();
                         break;
                     case "4":
                         break;
@@ -121,7 +120,7 @@ namespace BancoDeDados
                         break;
                     case "2":
                         //Chamar metodo CONSULTA cliente
-                        ConsultaCliente();
+                        //ConsultaCliente();
                         break;                    
                     case "3":
                         Console.WriteLine("Sisitema FORA DO AR!");
@@ -141,7 +140,26 @@ namespace BancoDeDados
             string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=c:\users\greicy\documents\visual studio 2013\Projects\GreicyRepositorio\BancoDeDados\BandoDeDados\GreicyDB.mdf;Integrated Security=True";
             SqlConnection sqlConnection = new SqlConnection(connectionString);            
             sqlConnection.Open();
+            SqlCommand command = new SqlCommand("SELECT*FROM Produto ", sqlConnection);
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                Console.WriteLine(reader["Nome"]);
+            }
+            sqlConnection.Close();            
+        }
+        static void ConsultaCliente()
+        {
 
+            string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=c:\users\greicy\documents\visual studio 2013\Projects\GreicyRepositorio\BancoDeDados\BandoDeDados\GreicyDB.mdf;Integrated Security=True";
+            SqlConnection sqlConnection = new SqlConnection(connectionString);
+            sqlConnection.Open();
+            SqlCommand command = new SqlCommand("SELECT*FROM Cliente ", sqlConnection);
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                Console.WriteLine(reader["PrimeiroNome"]);
+            }
             sqlConnection.Close();
         }
         static void CadastroCliente()
@@ -205,6 +223,32 @@ namespace BancoDeDados
                 Console.WriteLine(e.ToString());
             }
             sqlConnection.Close(); 
+        }
+        static void CadastroPedido()
+        {
+            string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=c:\users\greicy\documents\visual studio 2013\Projects\GreicyRepositorio\BancoDeDados\BandoDeDados\GreicyDB.mdf;Integrated Security=True";
+            SqlConnection sqlConnection = new SqlConnection(connectionString);
+            sqlConnection.Open();
+            var dataPedido = DateTime.Now;
+            Console.WriteLine("Digite a quantidade de produtos: ");
+            var quantidade = int.Parse(Console.ReadLine());
+            int produtoId = 8; //fazer uma logica de busca
+            int clienteId = 1; // fazer uma logica de busca
+            string sql = String.Format(@"INSERT INTO Pedido (DataPedido, Quantidade, Produto_Id, Cliente_Id) VALUES ('{0}', {1}, {2}, {3})",dataPedido, quantidade, produtoId, clienteId);
+            SqlCommand insert = new SqlCommand(sql, sqlConnection);
+            try
+            {
+                int i = insert.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    Console.WriteLine("Pedido realizado com sucesso!");
+                }
+            }
+            catch (SqlException e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+            sqlConnection.Close();
         }
         static void Main1(string[] args)
         {
@@ -290,7 +334,7 @@ namespace BancoDeDados
             sqlConnection.Close();
             Console.ReadKey();
         }
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {
             //CONNECTION STRING
             string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=c:\users\greicy\documents\visual studio 2013\Projects\GreicyRepositorio\BancoDeDados\BandoDeDados\GreicyDB.mdf;Integrated Security=True";
@@ -378,6 +422,10 @@ namespace BancoDeDados
             //FECHA CONEXÃO
             sqlConnection.Close();
             Console.ReadKey();
+        }
+        static void Main(string[] args)
+        {
+            MenuPrincipal();
         }
     }
 }
