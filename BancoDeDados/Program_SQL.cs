@@ -122,9 +122,8 @@ namespace BancoDeDados
                         //Chamar metodo CONSULTA cliente
                         //ConsultaCliente();
                         break;                    
-                    case "3":
-                        Console.WriteLine("Sisitema FORA DO AR!");
-                        //ConsultaPedido();
+                    case "3":                        
+                        ConsultaPedido();
                         break;
                     case "4":                        
                         break;
@@ -135,32 +134,45 @@ namespace BancoDeDados
                 }
             } while (Opcao != "4");
         }
+        static void ConsultaCliente()
+        {
+
+        }
         static void ConsultaProduto()
         {
             string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=c:\users\greicy\documents\visual studio 2013\Projects\GreicyRepositorio\BancoDeDados\BandoDeDados\GreicyDB.mdf;Integrated Security=True";
             SqlConnection sqlConnection = new SqlConnection(connectionString);            
             sqlConnection.Open();
-            SqlCommand command = new SqlCommand("SELECT*FROM Produto ", sqlConnection);
-            SqlDataReader reader = command.ExecuteReader();
-            while (reader.Read())
+            SqlCommand select = new SqlCommand(@"SELECT * FROM Produto", sqlConnection);
+            SqlDataReader dataReader = select.ExecuteReader();
+
+            while (dataReader.Read())
             {
-                Console.WriteLine(reader["Nome"]);
+                Console.WriteLine(dataReader["Nome"]);
             }
-            sqlConnection.Close();            
+            sqlConnection.Close();
+            Console.ReadKey();
         }
-        static void ConsultaCliente()
+        static void ConsultaPedido()
         {
 
             string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=c:\users\greicy\documents\visual studio 2013\Projects\GreicyRepositorio\BancoDeDados\BandoDeDados\GreicyDB.mdf;Integrated Security=True";
             SqlConnection sqlConnection = new SqlConnection(connectionString);
             sqlConnection.Open();
-            SqlCommand command = new SqlCommand("SELECT*FROM Cliente ", sqlConnection);
-            SqlDataReader reader = command.ExecuteReader();
-            while (reader.Read())
+            SqlCommand select = new SqlCommand(@"SELECT P.Nome, C.PrimeiroNome, PD.DataPedido, PD.Quantidade " +
+                                               "FROM Pedido AS PD " +
+                                               "INNER JOIN Cliente AS C ON PD.Cliente_Id = C.Id " +
+                                               "INNER JOIN Produto AS P ON PD.Produto_Id = P.Id", sqlConnection);
+            SqlDataReader dataReader = select.ExecuteReader();
+            while (dataReader.Read())
             {
-                Console.WriteLine(reader["PrimeiroNome"]);
+                Console.WriteLine("Data de Hoje:" + dataReader["DataPedido"]);
+                Console.WriteLine("Quantidade:" + dataReader["Quantidade"]);
+                Console.WriteLine("Produto:" + dataReader["Nome"]);
+                Console.WriteLine("Cliente:" + dataReader["PrimeiroNome"]);
             }
             sqlConnection.Close();
+            Console.ReadKey();
         }
         static void CadastroCliente()
         {
@@ -195,6 +207,7 @@ namespace BancoDeDados
             {
                 Console.WriteLine(e.ToString());
             }
+            Console.ReadKey();
             sqlConnection.Close();            
         }
         static void CadastroProduto()
@@ -222,7 +235,8 @@ namespace BancoDeDados
             {
                 Console.WriteLine(e.ToString());
             }
-            sqlConnection.Close(); 
+            sqlConnection.Close();
+            Console.ReadKey();
         }
         static void CadastroPedido()
         {
@@ -249,6 +263,7 @@ namespace BancoDeDados
                 Console.WriteLine(e.ToString());
             }
             sqlConnection.Close();
+            Console.ReadKey();
         }
         static void Main1(string[] args)
         {
@@ -429,3 +444,4 @@ namespace BancoDeDados
         }
     }
 }
+
