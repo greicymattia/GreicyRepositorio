@@ -1,0 +1,1 @@
+﻿select avg (Salario) as media_salario from Funcionario;

@@ -1,0 +1,1 @@
+﻿SELECT * FROM Funcionario where Salario > 1000 order by PrimeiroNome, Sobrenome asc

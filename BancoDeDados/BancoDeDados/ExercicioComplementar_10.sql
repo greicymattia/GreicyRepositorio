@@ -1,0 +1,1 @@
+SELECT * FROM Funcionario where Funcao Like 'supervisor'

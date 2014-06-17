@@ -1,0 +1,1 @@
+﻿SELECT PrimeiroNome, Sobrenome FROM Funcionario order by Sobrenome asc

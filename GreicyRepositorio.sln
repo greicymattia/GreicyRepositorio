@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unidades", "Unidades\Unidad
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medindo_a_Febre", "Medindo_a_Febre\Medindo_a_Febre.csproj", "{E9355EE8-C903-4BD7-A1C4-4BBDAEE9694A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BancoDeDados", "BancoDeDados\BancoDeDados.csproj", "{82E9D80E-12F5-411F-83DA-D078CBB6116B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BancoDeDados", "BancoDeDados\BancoDeDados.csproj", "{876E54A6-781F-4AAA-9681-E629A55D5997}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{E9355EE8-C903-4BD7-A1C4-4BBDAEE9694A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9355EE8-C903-4BD7-A1C4-4BBDAEE9694A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9355EE8-C903-4BD7-A1C4-4BBDAEE9694A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{82E9D80E-12F5-411F-83DA-D078CBB6116B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{82E9D80E-12F5-411F-83DA-D078CBB6116B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{82E9D80E-12F5-411F-83DA-D078CBB6116B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{82E9D80E-12F5-411F-83DA-D078CBB6116B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{876E54A6-781F-4AAA-9681-E629A55D5997}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{876E54A6-781F-4AAA-9681-E629A55D5997}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{876E54A6-781F-4AAA-9681-E629A55D5997}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{876E54A6-781F-4AAA-9681-E629A55D5997}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

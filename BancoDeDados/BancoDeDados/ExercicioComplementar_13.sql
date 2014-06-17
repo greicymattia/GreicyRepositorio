@@ -1,0 +1,1 @@
+﻿SELECT COUNT(*) as TotalFuncionarios FROM Funcionario

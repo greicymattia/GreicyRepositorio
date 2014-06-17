@@ -1,0 +1,1 @@
+﻿SELECT * FROM Funcionario ORDER BY  Funcao asc

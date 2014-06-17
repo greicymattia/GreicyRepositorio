@@ -1,0 +1,1 @@
+﻿SELECT PrimeiroNome, Salario FROM Funcionario WHERE Salario BETWEEN 500 AND 1500

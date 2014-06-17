@@ -1,0 +1,1 @@
+﻿SELECT*FROM Aluno ORDER BY Aprovado DESC; --Ordena aprovado por ordem descrescente  
