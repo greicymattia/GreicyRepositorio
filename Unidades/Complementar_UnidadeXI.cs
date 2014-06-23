@@ -8,7 +8,7 @@ namespace Unidades
 {
     class Complementar_UnidadeXI
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             int[] aposta = new int[6];
             int acertos = 0;          

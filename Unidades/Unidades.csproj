@@ -56,6 +56,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayList_ou_List.cs" />
     <Compile Include="Complementar_UnidadeIII.cs" />
     <Compile Include="Complementar_UnidadeVI.cs" />
     <Compile Include="Complementar_UnidadeX.cs" />
