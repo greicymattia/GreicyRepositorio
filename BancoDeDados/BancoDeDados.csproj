@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="TRABALHO\Questões teóricas.docx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="BancoDeDados\Chave estrangeira.sql" />
