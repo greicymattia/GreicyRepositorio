@@ -73,7 +73,7 @@ namespace Unidades
         static void Main21(string[] args)
         {
             //SEQUENCIA CRESCENTE
-            ArrayList vetor = new ArrayList;
+            ArrayList vetor = new ArrayList();
             for (int i = 0; i < 10; i++)
             {
                 vetor.Add(i+5);              
@@ -105,7 +105,7 @@ namespace Unidades
         static void Main31(string[] args)
         {
             //SEQUENCIA DECRESCENTE
-            ArrayList vetor = new ArrayList;
+            ArrayList vetor = new ArrayList();
             for (int i = 9; i >= 0; i--)
             {
                 vetor.Add(i - 1);
