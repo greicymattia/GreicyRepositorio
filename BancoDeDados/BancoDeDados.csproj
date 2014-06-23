@@ -95,6 +95,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="BancoDeDados\Inserir item na mao.sql" />
+    <Content Include="TRABALHO\exercicio 10.sql" />
     <Content Include="TRABALHO\exercicio 2.sql" />
     <Content Include="TRABALHO\exercicio 3.sql" />
     <Content Include="TRABALHO\exercicio 4.sql" />
