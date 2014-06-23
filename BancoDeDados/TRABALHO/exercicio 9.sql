@@ -1,0 +1,1 @@
+﻿select C.Nome from TBCurso AS C ORDER BY C.Nome ASC

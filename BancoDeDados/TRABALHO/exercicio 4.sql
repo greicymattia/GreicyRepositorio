@@ -1,0 +1,1 @@
+﻿select COUNT(*) FROM TBAluno

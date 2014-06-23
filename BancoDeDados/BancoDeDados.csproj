@@ -94,6 +94,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="BancoDeDados\Inserir item na mao.sql" />
+    <Content Include="TRABALHO\exercicio 10.sql" />
+    <Content Include="TRABALHO\exercicio 2.sql" />
+    <Content Include="TRABALHO\exercicio 3.sql" />
+    <Content Include="TRABALHO\exercicio 4.sql" />
+    <Content Include="TRABALHO\exercicio 5.sql" />
+    <Content Include="TRABALHO\exercicio 6.sql" />
+    <Content Include="TRABALHO\exercicio 7.sql" />
+    <Content Include="TRABALHO\exercicio 8.sql" />
+    <Content Include="TRABALHO\exercicio 9.sql" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
@@ -112,9 +121,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="TRABALHO\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

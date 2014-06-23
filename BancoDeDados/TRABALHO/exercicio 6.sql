@@ -1,0 +1,1 @@
+﻿select A.Nome from TBAluno AS A WHERE A.DataNascimento <= '1996-06-22'

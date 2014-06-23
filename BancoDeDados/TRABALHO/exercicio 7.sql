@@ -1,0 +1,1 @@
+﻿select A.Nome from TBAluno AS A where A.Sexo LIKE 'F' 
