@@ -75,6 +75,7 @@
     <Compile Include="UnidadeVII_Operadores.cs" />
     <Compile Include="UnidadeX.cs" />
     <Compile Include="UnidadeXI.cs" />
+    <Compile Include="Unidade_Complementar.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
