@@ -106,7 +106,7 @@ namespace Unidades
             }
             Console.ReadKey();
         }
-        static void Main(string[] args)
+        static void Main5(string[] args)
         {
             List<string> selecoes = new List<string>();
             List<char> grupos = new List<char>() {'A','B','C','D','E','F','G','H'};                        
