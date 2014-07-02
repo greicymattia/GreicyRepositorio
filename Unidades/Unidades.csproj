@@ -56,7 +56,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArrayList_ou_List.cs" />
+    <Compile Include="Coleçoes\ArrayList_ou_List.cs" />
     <Compile Include="Complementar_UnidadeIII.cs" />
     <Compile Include="Complementar_UnidadeVI.cs" />
     <Compile Include="Complementar_UnidadeX.cs" />
@@ -98,8 +98,12 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CSS\CSS.css" />
+    <Content Include="CSS\Jinx-Classic.jpg" />
+    <Content Include="Web\ExemplosCSS.html" />
     <Content Include="Web\HTMLPage1.html" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
